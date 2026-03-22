@@ -13,7 +13,7 @@ html{scroll-behavior:smooth}
   width:100%;
   height:85vh;
   min-height:650px;
-  background:#333 url('imagens/banner.png') center/cover no-repeat;
+  background:#333 url('banner.png') center/cover no-repeat;
   position:relative;
   display:flex;
   align-items:center;
@@ -33,7 +33,7 @@ section.category h2 small{display:block;font-size:18px;color:#555;font-weight:40
 .products-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px}
 .product{width:30%;min-width:300px;background:#b0b0b0;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.3);text-align:center;transition:transform 0.3s}
 .product:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.4)}
-.product img{width:100%;height:350px;object-fit:cover;display:block;background:#ccc} /* fallback se não carregar */
+.product img{width:100%;height:350px;object-fit:cover;display:block;background:#ccc}
 .product .info{padding:20px}
 .product .info h3{font-size:18px;margin-bottom:10px;color:#1f2330}
 .product .info p{font-size:13px;color:#333;margin-bottom:15px;line-height:1.5}
@@ -48,48 +48,101 @@ footer .disclaimer{background:#2a2a2a;padding:20px;margin-top:20px;font-size:12p
 <body>
 
 <section class="hero"><div class="hero-content"></div></section>
-<header><nav><a href="#jewelry">Joalharia</a><a href="#bags">Malas</a><a href="#watches">Relógios</a><a href="#romantic">Românticos</a><a href="#home">Casa</a><a href="#wellness">Wellness</a><a href="#tech">Tech</a></nav></header>
 
-<section id="jewelry" class="category"><h2>💍 Joalharia<small>Presentes elegantes e atemporais</small></h2>
-<div class="products-grid">
-<!-- Colar 1 -->
-<div class="product"><img src="imagens/colar1.jpg" alt="Colar"><div class="info"><h3>Colar Elegante em Prata 925</h3><p>Colar delicado em prata esterlina, perfeito para oferecer algo bonito.</p><a href="https://amzn.to/4lvCJUY" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<!-- Colar 2 -->
-<div class="product"><img src="imagens/colar2.jpg" alt="Colar"><div class="info"><h3>Colar Swarovski Creativity</h3><p>Clássico Swarovski com brilho elegante, perfeito para surpreender.</p><a href="https://amzn.to/3NkSq4T" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<!-- Colar 3 -->
-<div class="product"><img src="imagens/colar3.jpg" alt="Colar"><div class="info"><h3>Colar Coração em Prata 925</h3><p>Colar em forma de coração com acabamento premium para datas especiais.</p><a href="https://amzn.to/4dqP4I0" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-</div></section>
+<header>
+  <nav>
+    <a href="#jewelry">Joalharia</a>
+    <a href="#bags">Malas</a>
+    <a href="#watches">Relógios</a>
+    <a href="#romantic">Românticos</a>
+    <a href="#home">Casa</a>
+    <a href="#wellness">Wellness</a>
+    <a href="#tech">Tech</a>
+  </nav>
+</header>
 
-<!-- As restantes categorias seguem o mesmo padrão -->
-<section id="bags" class="category"><h2>👜 Malas<small>Estilo e praticidade para o dia a dia</small></h2>
+<!-- Joalharia -->
+<section id="jewelry" class="category">
+<h2>💍 Joalharia<small>Presentes elegantes e atemporais</small></h2>
 <div class="products-grid">
-<div class="product"><img src="imagens/bolsa1.jpg" alt="Bolsa"><div class="info"><h3>Bolsa Tote Elegante</h3><p>Bolsa tote espaçosa e elegante, perfeita para trabalho ou passeios.</p><a href="https://amzn.to/4sjAjLV" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<div class="product"><img src="imagens/bolsa2.jpg" alt="Bolsa"><div class="info"><h3>Bolsa Transversal</h3><p>Prática e moderna, ideal para levar o essencial com estilo.</p><a href="https://amzn.to/4ly6Rz3" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<div class="product"><img src="imagens/bolsa3.jpg" alt="Bolsa"><div class="info"><h3>Bolsa Casual Chic</h3><p>Versátil com design moderno, combina com qualquer look do dia a dia.</p><a href="https://amzn.to/4bi0b4Q" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-</div></section>
+<div class="product"><img src="colar1.jpg" alt="Colar"><div class="info"><h3>Colar Elegante em Prata 925</h3><p>Colar delicado em prata esterlina, perfeito para oferecer algo bonito.</p><a href="https://amzn.to/4lvCJUY" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="colar2.jpg" alt="Colar"><div class="info"><h3>Colar Swarovski Creativity</h3><p>Clássico Swarovski com brilho elegante, perfeito para surpreender.</p><a href="https://amzn.to/3NkSq4T" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="colar3.jpg" alt="Colar"><div class="info"><h3>Colar Coração em Prata 925</h3><p>Colar em forma de coração com acabamento premium para datas especiais.</p><a href="https://amzn.to/4dqP4I0" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="pulseira1.jpg" alt="Pulseira"><div class="info"><h3>Pulseira Elegante em Prata</h3><p>Pulseira delicada e versátil para o dia a dia ou ocasiões especiais.</p><a href="https://amzn.to/4bhCxVW" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="pulseira2.jpg" alt="Pulseira"><div class="info"><h3>Pulseira Charm</h3><p>Pulseira personalizável, perfeita para criar um presente único.</p><a href="https://amzn.to/4lC1Nd4" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="pulseira3.jpg" alt="Pulseira"><div class="info"><h3>Pulseira Minimalista</h3><p>Design simples e elegante para quem prefere estilo discreto.</p><a href="https://amzn.to/4btLNoC" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="brincos1.png" alt="Brincos"><div class="info"><h3>Brincos em Prata 925</h3><p>Brincos elegantes em prata para completar qualquer look com sofisticação.</p><a href="https://amzn.to/40C4j9t" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="brincos2.jpg" alt="Brincos"><div class="info"><h3>Brincos Pendentes em Cristal</h3><p>Brincos com cristais brilhantes para adicionar um toque de glamour.</p><a href="https://amzn.to/4sVmhjv" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="brincos3.jpg" alt="Brincos"><div class="info"><h3>Brincos Minimalistas</h3><p>Brincos pequenos e discretos para uso diário com elegância.</p><a href="https://amzn.to/4uAzLCN" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
+
+<!-- Malas -->
+<section id="bags" class="category">
+<h2>👜 Malas<small>Estilo e praticidade para o dia a dia</small></h2>
+<div class="products-grid">
+<div class="product"><img src="bolsa1.jpg" alt="Bolsa"><div class="info"><h3>Bolsa Tote Elegante</h3><p>Bolsa tote espaçosa e elegante, perfeita para trabalho ou passeios.</p><a href="https://amzn.to/4sjAjLV" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="bolsa2.jpg" alt="Bolsa"><div class="info"><h3>Bolsa Transversal</h3><p>Prática e moderna, ideal para levar o essencial com estilo.</p><a href="https://amzn.to/4ly6Rz3" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="bolsa3.jpg" alt="Bolsa"><div class="info"><h3>Bolsa Casual Chic</h3><p>Versátil com design moderno, combina com qualquer look do dia a dia.</p><a href="https://amzn.to/4bi0b4Q" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
 
 <!-- Relógios -->
-<section id="watches" class="category"><h2>⌚ Relógios<small>Elegância no pulso</small></h2>
+<section id="watches" class="category">
+<h2>⌚ Relógios<small>Elegância no pulso</small></h2>
 <div class="products-grid">
-<div class="product"><img src="imagens/relogio1.jpg" alt="Relógio"><div class="info"><h3>Relógio Minimalista</h3><p>Design limpo e elegante para simplicidade e sofisticação.</p><a href="https://amzn.to/47q4mt1" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<div class="product"><img src="imagens/relogio2.jpg" alt="Relógio"><div class="info"><h3>Relógio Clássico</h3><p>Um clássico atemporal, ideal para ocasiões formais ou qualquer look.</p><a href="https://amzn.to/4lHug1e" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<div class="product"><img src="imagens/relogio3.jpg" alt="Relógio"><div class="info"><h3>Relógio Moderno</h3><p>Design contemporâneo com detalhes únicos para quem se destaca.</p><a href="https://amzn.to/3N7YAVZ" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-</div></section>
+<div class="product"><img src="relogio1.jpg" alt="Relógio"><div class="info"><h3>Relógio Minimalista</h3><p>Design limpo e elegante para simplicidade e sofisticação.</p><a href="https://amzn.to/47q4mt1" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="relogio2.jpg" alt="Relógio"><div class="info"><h3>Relógio Clássico</h3><p>Um clássico atemporal, ideal para ocasiões formais ou qualquer look.</p><a href="https://amzn.to/4lHug1e" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="relogio3.jpg" alt="Relógio"><div class="info"><h3>Relógio Moderno</h3><p>Design contemporâneo com detalhes únicos para quem se destaca.</p><a href="https://amzn.to/3N7YAVZ" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
 
 <!-- Românticos -->
-<section id="romantic" class="category"><h2>💝 Românticos<small>Para momentos especiais</small></h2>
+<section id="romantic" class="category">
+<h2>💝 Românticos<small>Para momentos especiais</small></h2>
 <div class="products-grid">
-<div class="product"><img src="imagens/rosas.jpg" alt="Rosas"><div class="info"><h3>Rosas Eternas</h3><p>Rosas preservadas que duram 3-5 anos. Símbolo de amor eterno.</p><a href="https://amzn.to/4byNvp2" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<div class="product"><img src="imagens/caneca.jpg" alt="Caneca"><div class="info"><h3>Conjunto de Canecas Românticas</h3><p>Cerâmica de alta qualidade. Presente perfeito para casais. 300ml cada.</p><a href="https://amzn.to/4bsCJjZ" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-<div class="product"><img src="imagens/candeeiro.jpg" alt="Candeeiro"><div class="info"><h3>Candeeiro Personalizado Spotify</h3><p>Mapa e foto personalizada com LED. Presente romântico único.</p><a href="https://amzn.to/3PgqmjA" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
-</div></section>
+<div class="product"><img src="rosas.jpg" alt="Rosas"><div class="info"><h3>Rosas Eternas</h3><p>Rosas preservadas que duram 3-5 anos. Símbolo de amor eterno.</p><a href="https://amzn.to/4byNvp2" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="caneca.jpg" alt="Caneca"><div class="info"><h3>Conjunto de Canecas Românticas</h3><p>Cerâmica de alta qualidade. Presente perfeito para casais. 300ml cada.</p><a href="https://amzn.to/4bsCJjZ" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="candeeiro.jpg" alt="Candeeiro"><div class="info"><h3>Candeeiro Personalizado Spotify</h3><p>Mapa e foto personalizada com LED. Presente romântico único.</p><a href="https://amzn.to/3PgqmjA" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
 
-<!-- As restantes categorias seguem exatamente o mesmo padrão (home, wellness, tech) -->
+<!-- Casa -->
+<section id="home" class="category">
+<h2>🏠 Casa & Ambiente<small>Conforto e estilo</small></h2>
+<div class="products-grid">
+<div class="product"><img src="vela1.jpg" alt="Vela"><div class="info"><h3>Vela Yankee Lemon Lavender</h3><p>Fragrância fresca de limão e lavanda. Até 150h duração. 623g.</p><a href="https://amzn.to/3PeQ8F1" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="vela2.jpg" alt="Vela"><div class="info"><h3>Vela Yankee Vanilla</h3><p>Baunilha pura, doce e cremosa. Até 150h duração. 623g.</p><a href="https://amzn.to/4cSCMlk" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="vela3.jpg" alt="Vela"><div class="info"><h3>Vela Yankee Cherry Blossom</h3><p>Fragrância de flores de primavera. Até 150h duração. 623g.</p><a href="https://amzn.to/4734BKd" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
+
+<!-- Wellness -->
+<section id="wellness" class="category">
+<h2>💄 Wellness & Care<small>Autocuidado é amor</small></h2>
+<div class="products-grid">
+<div class="product"><img src="sabonete1.jpg" alt="Sabonetes"><div class="info"><h3>Pack 4 Sabonetes Artesanais</h3><p>Abacate, Uva, Monoï, Árvore do Chá. Veganos, hidratantes. Feitos em Espanha.</p><a href="https://amzn.to/47RWn7Y" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="sabonete2.jpg" alt="Sabonetes"><div class="info"><h3>18 Sabonetes Flora Rose</h3><p>Em forma de rosa, perfumados. Presente para ocasiões especiais. Caixa decorada.</p><a href="https://amzn.to/4lERANa" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="bombas.jpg" alt="Bombas de Banho"><div class="info"><h3>7 Bombas de Banho Bio</h3><p>Óleos essenciais, manteiga de karité. 7 aromas diferentes. 100% vegan.</p><a href="https://amzn.to/4sRZO6N" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
+
+<!-- Tech -->
+<section id="tech" class="category">
+<h2>📸 Tech & Criativo<small>Tecnologia com alma</small></h2>
+<div class="products-grid">
+<div class="product"><img src="auscultadores.jpg" alt="Auscultadores"><div class="info"><h3>Auscultadores Sony WH-1000XM5</h3><p>Cancelamento de ruído premium, 30h bateria, áudio Hi-Res. Inclui estojo rígido.</p><a href="https://amzn.to/4rxiHuF" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="impressora.jpg" alt="Impressora"><div class="info"><h3>Impressora Instax Mini LINK2</h3><p>Imprime fotos do smartphone. Modo AR, bateria recarregável.</p><a href="https://amzn.to/4btel1z" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+<div class="product"><img src="maquina.jpg" alt="Câmara"><div class="info"><h3>Câmara Instax Mini 12</h3><p>Fotos instantâneas tamanho cartão. Auto-exposição, lente selfie incluída.</p><a href="https://amzn.to/4bgXVL6" target="_blank" class="btn">🛒 COMPRAR</a></div></div>
+</div>
+</section>
 
 <footer>
 <p>© 2026 Guia de Presentes</p>
+<p>Todos os direitos reservados</p>
 <div class="disclaimer">
 <p><strong>⚠️ Divulgação de Afiliado:</strong> Este site contém links de afiliado. Posso ganhar uma comissão se comprares através destes links, sem custo extra para ti.</p>
+<p><strong>📷 Aviso de Imagens:</strong> As imagens dos produtos são apenas ilustrativas. Os produtos reais podem variar em cor, tamanho e aparência.</p>
 </div>
 </footer>
 
